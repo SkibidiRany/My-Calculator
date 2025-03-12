@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    Answer before evaluation ==> <input type="text" id="Test" readonly>
 
     <div class="calculator-container">
         <div class="CalculatorOutline">
@@ -23,9 +22,19 @@
                     </div>
                 </div>
             </div>  
+
+            <div style="display: flex; justify-content: center; margin-top: 15px;">
+                <input type="text" id="DisplayBefore" readonly 
+                    style="width: 80%; min-width: 300px; padding: 8px; text-align: center; 
+                           font-size: 1.2em; border: 2px solid rgba(104, 73, 255, 0.7); 
+                           border-radius: 8px; background-color: rgba(255, 255, 255, 0.8); 
+                           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);"
+                    placeholder="Answer before evaluation">
+            </div>
+
             <textarea id="Display" rows="3" class="ShrinkToFit DisplayText"
                 style="width: 40%; min-width: 300px;" 
-                placeholder="Enter the skibidi sigmas" ></textarea> 
+                placeholder="Enter the skibidi sigmas" readonly></textarea> 
 
             <div class="grid-container" style="min-width: 320px; max-height: 310px; padding-top: 10px;">
                 <!-- Number Buttons -->

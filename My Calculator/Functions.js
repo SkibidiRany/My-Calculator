@@ -68,7 +68,7 @@ function DisplayAnswer(){
     if(operators.includes(answer[answer.length-1])) answer = answer.slice(0,-1)
 
     answer = AnswerAfterChanges(answer)
-    document.getElementById('Test').value = answer
+    document.getElementById('DisplayBefore').value = answer
     answer = formatNumberWithPrecision(eval(answer))
     
     try{
@@ -189,7 +189,7 @@ function ChangePiValue(expression){
 
 
 
-function OnParClick(buttonValue){
+function  OnParClick(buttonValue){
     display = document.getElementById('Display');
     var last = display.value[display.value.length-1]
     if(buttonValue === '(' ){
