@@ -1,0 +1,100 @@
+.CenterText{
+    min-width: 186px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(0, 255, 255, 0.53); /* Aqua background color */
+
+    padding: 15px;
+}
+
+.OuterContainer {
+    min-width: 70%;
+    background-color: rgba(0, 236, 236, 0.411); /* Aqua background color */
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Rounded corners for the outer container */
+}
+
+
+.calculator-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh; /* Full viewport height */
+}
+
+
+.CalculatorOutline{
+    border: 5px solid #000; /* Outline border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    background-color: rgba(95, 95, 95, 0.9); /* Light background for calculator */
+    padding: 20px; /* Padding inside the outline */
+}
+
+
+
+.ShrinkToFit{
+    width: fit-content; /* Shrinks to fit the content */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: center;
+    align-content: center;
+    
+}
+
+
+.grid-container {
+    justify-content: center; /* Align buttons horizontally */
+    text-align: center;
+    align-items: center; /* Align buttons vertically (optional) */
+    grid-gap: 10px; /* Space between buttons */
+    height: 100vh; /* Full viewport height for vertical centering */
+
+}
+
+.NumberButton {
+    background-color: rgba(255, 68, 180, 0.628);
+}
+
+.SignButton{
+    background-color: rgba(246, 255, 0, 0.628);
+}
+
+
+.MyButton{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+    outline: 1px solid black; /* Outline with black color */
+    border: none;
+}
+
+
+
+.DisplayText{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    outline: 1px solid black; /* Outline with black color */
+    border-radius: 18px; /* Rounded corners */
+    width:350px;
+    border:none;
+    background-color: white; /* Aqua background color */
+    margin-top: 30px;
+    margin-bottom: 20px; /* Centers horizontally */
+    
+}
+
+

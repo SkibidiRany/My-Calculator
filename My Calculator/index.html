@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   
+    <title>My Calculator</title>
+    <body style="background-color:rgb(207, 153, 243) ;"></body>
+</head>
+
+<body>
+    Answer before evaluation ==> <input type="text" id="Test" readonly>
+
+    <div class="calculator-container">
+        <div class="CalculatorOutline">
+            <div style=" display:flex;
+            justify-content: center;
+            text-align: center; min-width: 236px;">
+                <div class="OuterContainer" style="background-color: rgba(104, 73, 255, 0.692); min-width: 233px; ">
+                    <div class="OuterContainer" style="background-color: rgba(73, 179, 255, 0.692);">
+                        <div class="CenterText ShrinkToFit"   >My Calculator</div>
+                    </div>
+                </div>
+            </div>  
+            <textarea id="Display" rows="3" class="ShrinkToFit DisplayText"
+                style="width: 40%; min-width: 300px;" 
+                placeholder="Enter the skibidi sigmas" ></textarea> 
+
+            <div class="grid-container" style="min-width: 320px; max-height: 310px; padding-top: 10px;">
+                <!-- Number Buttons -->
+
+                <button data-type="Restart" data-value="Restart" class="MyButton NumberButton" style="background-color: rgba(38, 0, 255, 0.639);">CE</button>
+                <button data-type="Par" data-value="(" class="MyButton SignButton">(</button>
+                <button data-type="Par" data-value=")" class="MyButton SignButton">)</button>
+                <button data-type="sign" data-value="^" class="MyButton SignButton" style="font-weight:600;">^</button>
+                <button data-type="sign" data-value="." class="MyButton SignButton" style="font-weight:600;">.</button>
+
+                <br>
+                <button data-type="number" data-value="e" class="MyButton NumberButton">e</button>
+
+                <button data-type="number" data-value="1" class="MyButton NumberButton">1</button>
+                <button data-type="number" data-value="2" class="MyButton NumberButton">2</button>
+                <button data-type="number" data-value="3" class="MyButton NumberButton">3</button>
+                <button data-type="sign" data-value="+" class="MyButton SignButton">+</button>
+
+                <br>
+                <button data-type="number" data-value="π" class="MyButton NumberButton" style="font-family:l; font-size: larger;">π</button>
+
+                <button data-type="number" data-value="4" class="MyButton NumberButton">4</button>
+                <button data-type="number" data-value="5" class="MyButton NumberButton">5</button>
+                <button data-type="number" data-value="6" class="MyButton NumberButton">6</button>
+                <button data-type="sign" data-value="-" class="MyButton SignButton">-</button>
+
+                <br>
+                <button data-type="number" data-value="ln" class="MyButton NumberButton"  style="font-family:cursive; font-size: larger;">ln</button>
+
+                <button data-type="number" data-value="7" class="MyButton NumberButton">7</button>
+                <button data-type="number" data-value="8" class="MyButton NumberButton">8</button>
+                <button data-type="number" data-value="9" class="MyButton NumberButton">9</button>
+                <button data-type="sign" data-value="*" class="MyButton SignButton" style="font-size: 150%;">*</button>
+
+                <br>
+                <button data-type="number" data-value="log" class="MyButton NumberButton">log</button>
+
+                <button data-type="Del" data-value="Del" class="MyButton SignButton">←</button>
+                <button data-type="number" data-value="0" class="MyButton NumberButton">0</button>
+                <button data-type="Answer" data-value="=" class="MyButton SignButton">=</button>
+                <button data-type="sign" data-value="/" class="MyButton SignButton">/</button>
+            
+            </div>
+        </div>
+    </div>
+    <script src="Functions.js"></script>
+
+</body>
+
+</html>
